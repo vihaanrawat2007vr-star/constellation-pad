@@ -47,3 +47,15 @@ canvas.addEventListener('click',function(event){
 
 
 //glow effect and clear Button
+ctx.shadowBlur = 12;
+ctx.shadowColor = '#eaf0ff';
+
+//grab the button and listen for clicks on it(not on the canvas)
+const clearBtn = document.getElementById('clearBtn')
+
+clearBtn.addEventListener('click',function(){
+    //clearing all stars
+    ctx.clearRect(0,0,canvas.width , canvas.height);
+
+    stars.length = 0;
+})
