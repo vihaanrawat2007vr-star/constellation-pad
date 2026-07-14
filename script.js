@@ -44,3 +44,6 @@ canvas.addEventListener('click',function(event){
     //now remember the star ,  for the next click to check against 
     stars.push({x:x, y:y});
 })
+
+
+//glow effect and clear Button
